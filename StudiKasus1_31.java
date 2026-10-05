@@ -5,13 +5,9 @@ public class StudiKasus1_31 {
         Scanner sc = new Scanner(System.in);
 
         int hargaPerCup = 18000;
-        int jumlahCup;
-        int uangBayar;
-        int totalHarga;
-        int diskon = 0;
-        int totalBayar;
-        int kembalian;
-        int kurang;
+        int jumlahCup, uangBayar;
+        int totalHarga, diskon = 0, totalBayar;
+        int kembalian, kurang;
 
         System.out.print("Masukkan jumlah cup : ");
         jumlahCup = sc.nextInt();
@@ -26,9 +22,9 @@ public class StudiKasus1_31 {
 
         totalBayar = totalHarga - diskon;
 
-        System.out.println("Total harga         : Rp " + totalHarga);
-        System.out.println("Diskon              : Rp " + diskon);
-        System.out.println("Total bayar         : Rp " + totalBayar);
+        System.out.println("Total harga : Rp " + totalHarga);
+        System.out.println("Diskon      : Rp " + diskon);
+        System.out.println("Total bayar : Rp " + totalBayar);
 
         if (uangBayar >= totalBayar) {
             kembalian = uangBayar - totalBayar;
